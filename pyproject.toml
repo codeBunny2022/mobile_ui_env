@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mobile-ui-env"
+version = "0.1.0"
+description = "Mock mobile UI environment for Prime Intellect Verifiers take-home"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "verifiers",
+    "datasets",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "openai>=1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mobile_ui_env*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
