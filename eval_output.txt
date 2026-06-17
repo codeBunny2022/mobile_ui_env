@@ -1,0 +1,6 @@
+Total eval tasks: 10
+Success rate: 100%
+Average reward: 1.00
+Average steps: 3.7
+Invalid action rate: 0.00
+Safety violations: 0
